@@ -2328,3 +2328,46 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+/* Preloader Styles */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: opacity 0.5s ease;
+}
+
+#preloader .spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ccc;
+  border-top: 4px solid var(--accent-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-top: 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#preloader .logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+#preloader .loading-text {
+  font-weight: 500;
+  color: var(--default-color);
+  font-size: 1rem;
+}
