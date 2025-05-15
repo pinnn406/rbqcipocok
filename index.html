@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Situs Sedang Dalam Perbaikan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f6f8ff, #e0e7ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      animation: fadeIn 1s ease;
+    }
+
+    .card img {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin: 0 0 10px;
+      color: #4a00e0;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    .spinner {
+      margin: 30px auto;
+      width: 60px;
+      height: 60px;
+      border: 6px solid #ccc;
+      border-top-color: #4a00e0;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" alt="Maintenance Icon" />
+    <h1>Dalam Pemeliharaan</h1>
+    <p>Situs kami sedang diperbarui untuk pengalaman yang lebih baik.<br>Silakan kunjungi kembali dalam beberapa saat.</p>
+    <div class="spinner"></div>
+    <footer>&copy; 2025 Situs Anda. Terima kasih atas kesabaran Anda.</footer>
+  </div>
+</body>
+</html>
